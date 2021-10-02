@@ -1,4 +1,4 @@
-use std::{process::exit, time::Instant};
+use std::{process::exit};
 
 const BOARD_CAP: usize = 100;
 
@@ -6,7 +6,7 @@ fn main() {
     let mut board : [u32; BOARD_CAP] = [0; BOARD_CAP];
     board[BOARD_CAP - 2] = 1;
 
-    for i in 0..(BOARD_CAP - 2) {
+    for _i in 0..(BOARD_CAP - 2) {
         for j in 0..BOARD_CAP {
             print!(
                 "{}",
